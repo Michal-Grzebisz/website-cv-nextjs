@@ -3,6 +3,16 @@ import React from 'react';
 import { Headline } from '~/components/Headline';
 import { Section } from '~/components/Section';
 import { SectionID } from '~/consts';
+import ReactImage from '../public/technology-staff/react.png'
+import ReactQueryImage from '../public/technology-staff/react-query.jpeg'
+import AntdImage from '../public/technology-staff/antd.png'
+import CssImage from '../public/technology-staff/css.png'
+import SassImage from '../public/technology-staff/sass.png'
+import TailwindImage from '../public/technology-staff/tailwind.png'
+import NextJsImage from '../public/technology-staff/nextjs.png'
+import HtmlImage from '../public/technology-staff/html.png'
+import JsImage from '../public/technology-staff/js.png'
+import Image from 'next/image';
 
 interface Education {
   years: string,
@@ -77,7 +87,36 @@ const WorkExperience: WorkExperience[] = [
     ],
     company: 'The Digital Bunch'
   },
-  
+]
+
+const TechnologyStaff = [
+  {
+    image: HtmlImage
+  },
+  {
+    image: CssImage
+  },
+  {
+    image: SassImage
+  },
+  {
+    image: JsImage
+  },
+  {
+    image: ReactImage
+  },
+  {
+    image: NextJsImage
+  },
+  {
+    image: ReactQueryImage
+  },
+  {
+    image: AntdImage
+  },
+  {
+    image: TailwindImage
+  },
 ]
 
 export const Experience = () => {
@@ -123,6 +162,26 @@ export const Experience = () => {
           <div key={idx} className='mb-8'>
             <p className='text-lg lg:text-xl font-bold opacity-80'>{e.school}</p>
             <p className='mt-1 opacity-70'>{e.level} / {e.years}</p>
+          </div>
+        ))
+      }
+      </div>
+      <Headline
+        title='TECHNOLOGY STAFFS'
+      />
+      <div className='grid grid-cols-4 gap-6'>
+      {
+        TechnologyStaff.map((t, idx) => (
+          <div key={idx}
+            className='relative h-36 flex-1'
+          >
+            <Image
+              layout='fill'
+              objectFit='contain'
+              placeholder='blur'
+              quality={ 80 }
+              src={ t.image}
+            />
           </div>
         ))
       }

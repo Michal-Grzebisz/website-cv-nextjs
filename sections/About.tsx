@@ -19,10 +19,10 @@ export const About = () => {
         in one of the Warsaw companies. 
       </p>
       <p className='lg:text-lg text- leading-8 mt-6'>
-        Although my current job gives me a lot of fun, 
-        I owe my success in this industry by self-denial and consistency in pursuing my goals. 
-        I try to constantly develop, broaden my horizons and keep up with the times. Therefore, 
-        I have decided to change my direction a bit and learn new skills in another industry, my choice was programming. 
+        I started my adventure with programming in the privacy of my home, using 
+        information obtained on the Internet. It quickly turned out that programming gives me a lot of fun. 
+        Thanks to the consistency in pursuing the goal I managed to finish the Front End Bootcamp while working as 
+        a 3D graphic designer and planning a wedding. 
       </p>
       <p className='lg:text-lg text- leading-8 mt-6 mb-8'>
         If you would ask someone around my group of friends “why programming?” most of them would say that "he constantly 

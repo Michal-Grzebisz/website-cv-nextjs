@@ -1,0 +1,22 @@
+$defaultColor: #00000042;
+
+@mixin scrollbar($color: $defaultColor) {
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  &::-webkit-scrollbar-track {
+      background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color;
+    border-radius: 8px;
+  }
+}
+
+@mixin scrollable($color: $defaultColor) {
+ @include scrollbar($color);
+
+ overflow-y: auto;
+ overflow-x: hidden;
+}

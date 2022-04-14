@@ -1,0 +1,14 @@
+.image:hover .disclaimer {
+    transform: translateX(0);
+}
+
+.image {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.disclaimer {
+    @apply transition-all;
+
+    transform: translateY(100%);
+}

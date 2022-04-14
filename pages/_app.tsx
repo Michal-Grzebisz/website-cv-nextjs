@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   const handleRouteChange = (url: string) => {
     if (GA_TRACKING_ID) {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       window.gtag('config', GA_TRACKING_ID, { page_path: url });
     }

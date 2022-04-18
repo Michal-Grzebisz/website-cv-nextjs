@@ -19,7 +19,7 @@ export const About = () => {
         in one of the Warsaw companies. 
       </p>
       <p className='lg:text-lg text- leading-8 mt-6'>
-        I started my adventure with programming in the privacy of my home, using 
+        I started my programming adventure in the privacy of my home, using 
         information obtained on the Internet. It quickly turned out that programming gives me a lot of fun. 
         Thanks to the consistency in pursuing the goal I managed to finish the Front End Bootcamp while working as 
         a 3D graphic designer and planning a wedding. 

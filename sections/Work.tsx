@@ -48,11 +48,6 @@ const FRONT_END_IMAGES_TDB: FRONT_END_IMAGES[] = [
   { image: FeGallery6, contain: true, name: 'Internal application for Gedeon Medica company', },
 ];
 
-// const FRONT_END_IMAGES_OWN: FRONT_END_IMAGES[] = [
-//   { image: FeGallery3, url: 'https://michal-grzebisz.github.io/good_hands/', name: 'Good Hands' },
-//   { image: FeGallery4, url: 'https://michal-grzebisz.github.io/good_hands/', name: 'Flickr' },
-// ];
-
 export const Work = () => {
   const [ on, setOn ] = useState(false);
   const [ activePhotoIdx, setActivePhotoIdx ] = useState<number>(0);
@@ -102,38 +97,14 @@ export const Work = () => {
             />
             <div className='bg-cvDark absolute w-full h-full opacity-5'/>
             </a>
-            <div className={ cx('text-white text-sm text-center absolute flex flex-col top-0 right-0 bottom-0 left-0 w-full p-2 bg-cvDark bg-opacity-0 hover:bg-opacity-40 tracking-wider') }>
-            </div>
+            <a href={image.url} 
+               target='_blank' rel='noreferrer' 
+               className='text-white text-sm text-center absolute flex flex-col top-0 right-0 bottom-0 left-0 w-full p-2 bg-cvDark bg-opacity-0 hover:bg-opacity-40 tracking-wider'></a>
           </div>
              <p className='text-cvSalmon text-center mt-2'>{image.name}</p>
         </div>
       ))}
     </div>
-    {/* <p className='text-cvSalmon mt-20 font-bold text-lg text-center'>My own projects</p>
-    <div className='grid relative gap-2 md:flex-row lg:grid-cols-2 xl:grid-cols-4 xl:gap-2 mt-6'>
-      {FRONT_END_IMAGES_OWN.map((image, idx) => (
-        <div key={idx}>
-          <div
-            className={ cx('relative h-96 flex-1', styles.image) }
-          >
-            <a href={image.url} target="_blank" rel="noreferrer" >
-            <Image
-              layout='fill'
-              objectFit={image.contain ? 'contain' : 'cover'}
-              placeholder='blur'
-              quality={ 80 }
-              src={ image.image }
-            />
-            <div className='bg-cvDark absolute w-full h-full opacity-5'/>
-            </a>
-            <div className={ cx('text-white text-sm text-center absolute flex flex-col top-0 right-0 bottom-0 left-0 w-full p-2 bg-cvDark bg-opacity-0 hover:bg-opacity-40 tracking-wider') }>
-            </div>
-          </div>
-             <p className='text-cvSalmon text-center mt-2'>{image.name}</p>
-        </div>
-      ))}
-    </div> */}
-
     <p className='text-3xl text-cvSalmon ml-8 my-4 font-lora mt-40'>- Graphic Projects</p>
     <div className='grid relative gap-2 md:flex-row lg:grid-cols-2 xl:grid-cols-4 xl:gap-2 mt-12'>
       {GRAPHIC_IMAGES.map((image, idx) => (

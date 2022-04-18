@@ -7,7 +7,7 @@ import { LINKS, scrollToSectionHandler } from '~/consts';
 import styles from './Navigation.module.css';
 import Logo from '../public/monogram.svg'
 
-const LINK_STYLES = 'block text-white font-semibold tracking-wider hover:text-cvSalmon font-light py-2';
+const LINK_STYLES = 'block text-white font-semibold tracking-wider hover:text-cvSalmon font-light py-2 focus:text-cvSalmon';
 
 export const Navigation = () => {
   const [ menu, setMenu ] = useState(false);

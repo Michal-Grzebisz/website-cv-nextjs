@@ -80,10 +80,10 @@ const WorkExperience: WorkExperience[] = [
     years: 'Jun 2019 - Dec 2021',
     role: 'Graphic 3d',
     tasks: [
-      'creating interior, exterior and product visulizations', 
-      '3d solid modeling',
-      'verification of documentation received from clients',
-      'paricipation in competition projects',
+      'creating websites in React and Next JS',
+      'use Talwindcss library',
+      'use Ant Design library',
+      'use React Query data-fetching library',
     ],
     company: 'The Digital Bunch'
   },
@@ -121,14 +121,14 @@ const TechnologyStaff = [
 
 export const Experience = () => {
   return <Section id={ SectionID.Experience } skipContainer>
-    <div className='px-4 grid gap-6 lg:gap-32 m-auto md:grid-cols-2 md:max-w-7xl pt-12'>
+    <div className='px-4 grid gap-6 lg:gap-20 m-auto md:grid-cols-2 md:max-w-7xl pt-12'>
       <Headline
         title='WORK EXPERIENCE'
       />
-      <div>
+      <div className='bg-gray-50 p-12'>
       {
         WorkExperience.map((work, idx) => (
-          <div key={idx} className='mb-16 text-cvDark'>
+          <div key={idx} className='mb-16 text-cvDark '>
             <p className='text-xl lg:text-xl font-bold opacity-80'>{work.role}</p>
             <p className='mt-1 lg:text-lg opacity-70'>{work.company} / {work.years}</p>
             <ul className='mt-6'>
@@ -143,7 +143,7 @@ export const Experience = () => {
       <Headline
         title='COURSE'
       />
-      <div>
+      <div className='bg-gray-50 p-12'>
       {
         Course.map((course, idx) => (
           <div key={idx} className='mb-8'>
@@ -156,7 +156,7 @@ export const Experience = () => {
       <Headline
         title='EDUCATION'
       />
-      <div>
+      <div className='bg-gray-50 p-12'>
       {
         Education.map((e, idx) => (
           <div key={idx} className='mb-8'>

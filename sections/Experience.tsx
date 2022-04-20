@@ -167,7 +167,7 @@ export const Experience = () => {
       }
       </div>
       <Headline
-        title='TECHNOLOGY STAFFS'
+        title='TECH STACK'
       />
       <div className='grid grid-cols-4 gap-6'>
       {

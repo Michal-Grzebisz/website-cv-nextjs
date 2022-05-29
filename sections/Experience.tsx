@@ -69,10 +69,10 @@ const WorkExperience: WorkExperience[] = [
     years: 'Jan 2022 - present',
     role: 'Front End Developer',
     tasks: [
-      'creating interior, exterior and product visulizations', 
-      '3d solid modeling',
-      'verification of documentation received from clients',
-      'paricipation in competition projects',
+      'creating websites in React and Next JS',
+      'useing Talwindcss library',
+      'useing Ant Design library',
+      'useing React Query data-fetching library',
     ],
     company: 'The Digital Bunch'
   },
@@ -80,10 +80,10 @@ const WorkExperience: WorkExperience[] = [
     years: 'Jun 2019 - Dec 2021',
     role: 'Graphic 3d',
     tasks: [
-      'creating websites in React and Next JS',
-      'use Talwindcss library',
-      'use Ant Design library',
-      'use React Query data-fetching library',
+      'creating interior, exterior and product visulizations', 
+      '3d solid modeling',
+      'verification of documentation received from clients',
+      'paricipation in competition projects',
     ],
     company: 'The Digital Bunch'
   },
